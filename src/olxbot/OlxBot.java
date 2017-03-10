@@ -24,6 +24,8 @@ import org.openqa.selenium.*;
 
 
 public class OlxBot {
+    
+  
 
     public static void main(String[] args) throws InterruptedException {
         
@@ -31,13 +33,16 @@ public class OlxBot {
         String username = "rafapardal07@hotmail.com";
         String password = "Rafa-1811994";
         
+        System.out.println(PATH);
+        
         // Settings iniciais
         /* Chrome 
-        System.setProperty("webdriver.chrome.driver", "/home/rafa/Downloads/chromedriver"); 
+        
+        System.setProperty("webdriver.chrome.driver", "selenium/chromedriver"); 
         WebDriver browser = new ChromeDriver();
         */
         /* Firefox*/
-        System.setProperty("webdriver.gecko.driver", "/home/rafa/Downloads/geckodriver");
+        System.setProperty("webdriver.gecko.driver", "selenium/geckodriver");
         WebDriver browser = new FirefoxDriver();
         
         browser.get("https://www.olx.pt/account/");
